@@ -1,0 +1,28 @@
+html,
+body{
+    height: 100%;
+}
+
+body{
+    backgroung-color: #fff;
+    font-size: 16px;
+    line-height: 26px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main{
+    flex-grow: 1;
+}
+
+.container{
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container__content{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
