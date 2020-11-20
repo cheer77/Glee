@@ -215,6 +215,83 @@
 
 
 
+.top-slider{
+    background-image: url('../images/decor/top-slider-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    background-color: #FCD7B6;
+    &__content{
+        padding-top: 225px;
+    }
+    &__item{
+        display: flex !important;
+        justify-content: space-between;
+    }
+    &__title{
+        max-width: 427px;
+        font-size: 72px;
+        line-height: 72px;
+        color: #243F4D;
+        @extend %rubik-500;
+        margin-bottom: 41px;
+    }
+    &__text{
+        max-width: 369px;
+        margin-bottom: 55px;
+        color: #436372;
+        @extend %rubik-400;
+    }
+    &__link{
+        position: relative;
+        padding: 25px 100px 21px 28px;
+        color: #fff;
+        @extend %rubik-500;
+        background-color: #A3BBC8;
+        &::before{
+            content: '';
+            background-image: url('../images/icons/arrow-right.svg');
+            position: absolute;
+            width: 22px;
+            height: 9px;
+            right: 15px;
+            top: 30px;
+        }
+    }
+
+    .slick-dots{
+        display: flex;
+        justify-content: center;
+        li{
+            padding: 0 5px;
+            line-height: 0;
+            margin-top: -70px;
+            button{
+                padding: 0;
+                font-size: 11;
+                background-color: rgba(255, 255, 255, 0.3);
+                color: #243F4D;
+                width: 29px;
+                height: 29px;
+                border-radius: 50%;
+                border: 0 solid transparent;
+                position: relative;
+            }
+            &.slick-active{
+                button{
+                    background-color: #fff;
+                    &::before{
+                        background-color: rgba(255, 255, 255, 0.3)
+                    }
+                }
+            }
+        }
+    }
+    .slick-track {
+        -webkit-transform: translate3d(0, 0, 0) !important;
+                transform: translate3d(0, 0, 0) !important;
+        }
+} 
 
 
 
