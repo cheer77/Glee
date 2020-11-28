@@ -8,10 +8,10 @@ $(function () {
         // autoplaySpeed: 3500
     })
 
+
     var mixer = mixitup('.products__categories', {
         selectors: {
-            control: '.products__btn-items'
+            control: '.products__btn-item'
         }
     });
-
 });

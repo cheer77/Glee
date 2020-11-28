@@ -306,7 +306,16 @@
     }
     &__item{
         margin: 39px 0 38px;
-        
+        position: relative;
+        & + .info__item::after{
+            content: '';
+            position: absolute;
+            height: 170px;
+            width: 1px;
+            background-color: #243F4D;
+            left: -210px;
+            top: -39px;
+        }
     }
     &__item-title{
         font-style: 18px;
@@ -314,6 +323,7 @@
         color: #414141;
         margin-bottom: 7px;
     }
+    
     &__item-text{
         max-width: 200px;
         font-size: 16px;
@@ -495,7 +505,84 @@
 }
 
 
-
+.view{
+    margin-top: 185px;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left{
+        display: flex;
+        position: relative;
+        background-color: #fcd7b667;
+        max-width: 870px;
+        min-height: 390px;
+        width: 100%;
+        margin-right: 30px;
+    }
+    &__img-left{
+        position: absolute;
+        margin-left: 140px;
+        top: -92px;
+    }
+    &__content-left{
+        max-width: 320px;
+        margin-top: 82px;
+        margin-left: 430px;
+    }
+    &__right{
+        display: flex;
+        position: relative;
+        background-color: #fcd7b667;
+        max-width: 870px;
+        min-height: 390px;
+        width: 100%;
+    }
+    &__img-right{
+        position: absolute;
+        margin-left: 140px;
+        top: -92px;
+    }
+    &__content-right{
+        max-width: 320px;
+        margin-top: 82px;
+        margin-left: 430px;
+    }
+    &__title{
+        font-size: 26px;
+        @extend %dmsans-700;
+        color: #243F4D;
+        line-height: 32px;
+        margin-bottom: 19px;
+    }
+    &__text{
+        font-size: 16px;
+        @extend %rubik-400;
+        color: #243F4D;
+        line-height: 30px;
+        margin-bottom: 19px;
+        margin-right: 10px;
+    }
+    &__link{
+        display: inline-block;
+        @extend %rubik-500;
+        font-size: 15px;
+        padding: 20px 84px 22px 18px;
+        border: 1px solid #243f4d5e;
+        border-radius: 5px;
+        color: #243F4D;
+        position: relative;
+        &::after{
+            content: '';
+            background-image: url('../images/icons/arrow-right-view.svg');
+            position: absolute;
+            width: 22px;
+            height: 9px;
+            top: 28px;
+            right: 10px;
+        }
+    }
+}
 
 
 
