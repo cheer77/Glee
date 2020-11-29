@@ -14,4 +14,10 @@ $(function () {
             control: '.products__btn-item'
         }
     });
+
+    var mixer = mixitup('.design__categories', {
+        selectors: {
+            control: '.design__btn-item'
+        }
+    });
 });

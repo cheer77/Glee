@@ -587,6 +587,103 @@
 
 
 
+.design{
+    &__title{
+        margin-top: 94px;
+        line-height: 43px;
+        font-size: 36px;
+        color: #191919;
+        @extend %dmsans-700;
+        text-align: center;
+    }
+    &__btn{
+        margin-top: 33px;
+    }
+    &__btn-items{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    &__btn-item{
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        margin-right: 33px;
+        color: #8B8B8B;
+        @extend %dmsans-700;
+        font-size: 16px;
+        cursor: pointer;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    &__btn-item--acctive{
+        color: #1A1A1A;
+    }
+    &__categories{
+        margin-top: 79px;
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(370px, 1fr) );
+        grid-gap: 39px 30px;
+    }
+    &__category{
+        max-width: 370px;
+        min-height: 246px;
+        background-color: #F8F8F8;
+        position: relative;
+    }
+    &__category-descr{
+        margin: 40px 0 0 30px;
+        max-width: 170px;
+    }
+    &__category-title{
+        font-size: 20px;
+        line-height: 24px;
+        color: #1A1A1A;
+        @extend %dmsans-700;
+        margin-bottom: 10px;
+    }
+    &__category-subtitle{
+        font-size: 16px;
+        line-height: 19px;
+        color: #A3BBC8;
+        @extend %dmsans-700;
+    }
+    &__category-img{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &__category-img--chair{
+        position: absolute;
+        top: 50px;
+        left: 200px;
+    }
+}
+
+.video{
+    margin-top: 120px;
+    min-height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    &__btn{
+        display: flex;
+        text-align: center;
+    }
+    &__btn-link{
+        display: block;
+        margin: 187px auto;
+        background-image: url('../images/icons/video-btn-bg.png');
+        background-repeat: no-repeat;
+        width: 127px;
+        height: 127px;
+    }
+
+}
+
+
+
+
 
 
 
