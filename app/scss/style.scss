@@ -312,7 +312,7 @@
             position: absolute;
             height: 170px;
             width: 1px;
-            background-color: #243F4D;
+            background-color: #243f4d1f;
             left: -210px;
             top: -39px;
         }
@@ -339,6 +339,7 @@
         width: 51px;
         height: 53px;
         margin-left: -77px;
+        top: 6px;
     }
     &__item-title--delivery::before{
         content: '';
@@ -347,7 +348,9 @@
         width: 54px;
         height: 36px;
         margin-left: -77px;
+        top: 6px;
     }
+
     &__item-title--payment::before{
         content: '';
         position: absolute;
@@ -355,7 +358,9 @@
         width: 54px;
         height: 52px;
         margin-left: -87px;
+        top: 6px;
     }
+
 }
 
 
@@ -678,7 +683,124 @@
         width: 127px;
         height: 127px;
     }
+}
 
+
+
+.article{
+    margin-top: 110px;
+    background: linear-gradient(180deg, #fff 332px, #fcf5ee 0%);
+    &__descr{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 40px;
+    }
+    &__title{
+        font-size: 36px;
+        line-height: 43px;
+        color: #1A1A1A;
+        @extend %dmsans-700;
+    }
+    &__link{
+        font-size: 16px;
+        line-height: 19px;
+        color: #262626;
+        @extend %dmsans-700;
+        padding-right: 25px;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            background-image: url('../images/icons/arrow-disign-right.svg');
+            width: 6px;
+            height: 10.6px;
+            top: 4px;
+            right: 0;
+        }
+    }
+    &__cards{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__card{
+        display: flex;
+        flex-direction: column;
+        max-width: 370px;
+        min-height: 420px;
+        margin-top: 20px;
+        background-color: #fff;
+    }
+    &__card-link{
+        position: relative;
+        &::after{
+            content: 'news';
+            position: absolute;
+            background-color: #A3BBC8;
+            width: 103px;
+            height: 30px;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 14px;
+            @extend %dmsans-700;
+            text-align: center;
+            border-radius: 15px;
+            top: 236px;
+            left: 28px;
+        }
+    }
+    &__card-text{
+        max-width: 315px;
+        margin: 36px 50px auto 30px;
+        color: #262626;
+        font-size: 18px;
+        @extend %dmsans-500;
+    }
+    &__card-info{
+        margin-top: auto;
+        margin-left: 30px;
+        max-width: 315px;
+        width: 100%;
+        margin-bottom: 10px;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            border-bottom: 1px solid #E0E0E0;
+            width: 315px;
+            top: -5px;
+            left: 0;
+        }
+    }
+    &__card-info-time{
+        @extend %rubik-500;
+        font-size: 12px;
+        color: #222933;
+        margin-right: 70px;
+    }
+    &__card-info-user{
+        @extend %rubik-500;
+        font-size: 12px;
+        color: #222933;
+        position: relative;
+        padding-right: 11px;
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url('../images/icons/user-design.svg');
+            width: 9px;
+            height: 9px;
+            left: -15px;
+            top: 2px;
+        }
+    }
+    &__icons{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 70px;
+        padding-bottom: 87px;
+    }
 }
 
 
